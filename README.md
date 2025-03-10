@@ -76,6 +76,7 @@ Copy
 🤝 Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to contact me.
+
 📧 Contact
 
 If you have any questions or would like to connect, feel free to reach out to me:
