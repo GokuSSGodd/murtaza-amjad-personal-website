@@ -24,25 +24,25 @@ Check out the live version of the website here: [Live Demo](#) *(Replace with yo
 ## 📂 Project Structure
 
 portfolio-website/
-├── css/ # CSS files for styling
-│ ├── about.css # Styles for the About page
-│ ├── index.css # Styles for the Home page
-│ ├── project.css # Styles for the Projects page
-│ └── resume.css # Styles for the Resume page
-├── js/ # JavaScript files for interactivity
-│ ├── about.js # Slider functionality for About page
-│ ├── index.js # Animations for Home page
-│ ├── projects.js # Animations for Projects page
-│ └── resume.js # Animations for Resume page
-├── public/ # Static assets (images, PDFs, etc.)
-│ ├── Murtaza-Picture.png # Profile picture
-│ ├── SWE Murtaza Resume.pdf # Resume PDF
-│ └── social-icons/ # Social media icons
-├── about.html # About Me page
-├── index.html # Home page
-├── projects.html # Projects page
-├── resume.html # Resume page
-└── README.md # This file
+- about.html # About Me page
+- index.html # Home page
+- projects.html # Projects page
+- resume.html # Resume page
+- README.md # This file
+📂 css/ # CSS files for styling
+- about.css # Styles for the About page
+- index.css # Styles for the Home page
+- project.css # Styles for the Projects page
+- resume.css # Styles for the Resume page
+📂 js/ # JavaScript files for interactivity
+- about.js # Slider functionality for About page
+- index.js # Animations for Home page
+- projects.js # Animations for Projects page
+- resume.js # Animations for Resume page
+📂 public/ # Static assets (images, PDFs, etc.)
+- Murtaza-Picture.png # Profile picture
+- SWE Murtaza Resume.pdf # Resume PDF
+- social-icons/ # Social media icons
 Copy
 
 
