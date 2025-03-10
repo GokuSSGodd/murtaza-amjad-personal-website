@@ -29,16 +29,19 @@ portfolio-website/
 - projects.html # Projects page
 - resume.html # Resume page
 - README.md # This file
+
 📂 css/ # CSS files for styling
 - about.css # Styles for the About page
 - index.css # Styles for the Home page
 - project.css # Styles for the Projects page
 - resume.css # Styles for the Resume page
+
 📂 js/ # JavaScript files for interactivity
 - about.js # Slider functionality for About page
 - index.js # Animations for Home page
 - projects.js # Animations for Projects page
 - resume.js # Animations for Resume page
+
 📂 public/ # Static assets (images, PDFs, etc.)
 - Murtaza-Picture.png # Profile picture
 - SWE Murtaza Resume.pdf # Resume PDF
