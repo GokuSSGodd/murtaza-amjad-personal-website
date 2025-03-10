@@ -45,6 +45,7 @@ portfolio-website/
 📂 public/ # Static assets (images, PDFs, etc.)
 - Murtaza-Picture.png # Profile picture
 - SWE Murtaza Resume.pdf # Resume PDF
+- banner.jpg # Banner picture 
 - social-icons/ # Social media icons
 Copy
 
