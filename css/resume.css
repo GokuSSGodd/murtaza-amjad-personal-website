@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #3690eb 0%, #914dd1 100%);
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: rgba(10, 92, 255, 0);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 1000;
+    backdrop-filter: blur(3px);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFD700;
+}
+
+/* Resume Section */
+.resume-section {
+    padding: 120px 50px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.resume-section h1 {
+    font-size: 2.5rem;
+    color: #FFD700;
+    margin-bottom: 40px;
+}
+
+.resume-section embed {
+    width: 100%;
+    max-width: 800px;
+    height: 110vh;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Button container */
+.button-container {
+    margin: 20px 0 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Button styles */
+.btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.btn.secondary {
+    background-color: white;
+    color: #1E90FF;
+    border: 2px solid #1E90FF;
+}
+
+.btn.secondary:hover {
+    background-color: #1E90FF;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+}
+
+.copyright-text {
+    font-size: 0.9rem;
+    color: white;
+    margin: 0;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+        background-color: rgba(10, 92, 255, 0.9);
+    }
+
+    .navbar a {
+        width: 80%;
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .resume-section {
+        padding: 100px 20px 30px;
+    }
+
+    .resume-section h1 {
+        font-size: 2rem;
+    }
+
+    .resume-section embed {
+        height: 80vh;
+    }
+
+    .button-container {
+        padding: 0 20px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .resume-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .resume-section embed {
+        height: 70vh;
+    }
+}
+
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .resume-section {
+        padding: 80px 20px 20px;
+    }
+
+    .resume-section embed {
+        height: 90vh;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
