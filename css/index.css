@@ -412,7 +412,7 @@ footer p {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url('/public/banner.jpg'); /* Replace with your image path */
+    background-image: url('../public/banner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
