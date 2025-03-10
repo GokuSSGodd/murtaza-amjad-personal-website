@@ -69,9 +69,6 @@ Copy
 
         Navigate through the different pages (Home, About, Projects, Resume) using the navigation bar.
 
-📄 License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
 🤝 Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an contact me.
