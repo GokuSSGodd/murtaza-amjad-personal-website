@@ -133,21 +133,18 @@ body {
     position: relative;
     margin: 0 auto;
     overflow: hidden;
-    padding: 0 20px;
+    padding: 0;
     box-sizing: border-box;
+    max-width: 800px;
 }
 
 .slider {
     display: flex;
     transition: transform 0.3s ease-out;
     width: 100%;
-    gap: 20px;
+    gap: 0;
     cursor: grab;
     transform: translateX(0);
-}
-
-.slider:active {
-    cursor: grabbing;
 }
 
 .slide {
@@ -164,6 +161,9 @@ body {
     opacity: 0.7;
     position: relative;
     overflow: hidden;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .slide::before {
@@ -265,17 +265,30 @@ footer {
     }
 
     .slider-container {
-        padding: 0 10px;
+        padding: 0;
         overflow: hidden;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .slider {
-        gap: 10px;
+        gap: 0;
     }
 
     .slide {
-        flex: 0 0 100%;
-        margin-right: 0;
+        padding: 20px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .slide p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .slide h2 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
     }
 
     .about-section h1 {
