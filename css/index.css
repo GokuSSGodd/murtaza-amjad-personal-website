@@ -5,9 +5,25 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(90deg, #3690eb 0%, #914dd1 100%);
     color: #333333; /* Dark text */
-    height: 100vh;
+    min-height: 100vh;
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
 }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
 /* Centering the hook section */
 .hook {
     margin-top: 100px;
@@ -679,5 +695,35 @@ html {
 
     .button-group {
         flex-direction: row;
+    }
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .experience-container {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .contact-section {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .contact-form, .contact-info {
+        width: 100%;
+        padding: 20px;
+        margin: 10px 0;
     }
 }
