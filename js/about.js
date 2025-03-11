@@ -102,4 +102,23 @@ window.oncontextmenu = function(event) {
     event.preventDefault();
     event.stopPropagation();
     return false;
-}; 
+};
+
+// Mobile dropdown functionality
+const dropdownBtns = document.querySelectorAll('.dropdown-btn');
+
+dropdownBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // Close all other dropdowns
+        dropdownBtns.forEach(otherBtn => {
+            if (otherBtn !== btn) {
+                otherBtn.classList.remove('active');
+                otherBtn.nextElementSibling.classList.remove('active');
+            }
+        });
+        
+        // Toggle current dropdown
+        btn.classList.toggle('active');
+        btn.nextElementSibling.classList.toggle('active');
+    });
+}); 
