@@ -302,6 +302,14 @@ footer {
     .about-section h1 {
         font-size: 1.8rem;
     }
+
+    footer {
+        padding: 10px;
+    }
+
+    .copyright-text {
+        font-size: 0.8rem;
+    }
 }
 
 /* Adding highlight class for important text */
