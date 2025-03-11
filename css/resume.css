@@ -56,10 +56,12 @@ body {
 
 /* Resume Section */
 .resume-section {
-    padding: 120px 50px 50px;
+    padding: 120px 20px 50px;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .resume-section h1 {
@@ -71,7 +73,7 @@ body {
 .resume-section embed {
     width: 100%;
     max-width: 800px;
-    height: 110vh;
+    height: 80vh;
     border: none;
     border-radius: 15px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
@@ -129,21 +131,29 @@ footer {
     }
 
     .resume-section {
-        width: 100%;
-        padding: 100px 20px 40px;
-        margin: 0;
+        padding: 100px 15px 30px;
     }
 
-    .pdf-container {
+    .resume-section embed {
         width: 100%;
-        padding: 0;
+        height: 75vh;
         margin: 0;
+        padding: 0;
     }
 
-    iframe {
+    .button-container {
         width: 100%;
-        margin: 0;
-        padding: 0;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1rem;
+        white-space: nowrap;
     }
 
     .navbar {
@@ -165,25 +175,20 @@ footer {
     .resume-section embed {
         height: 80vh;
     }
-
-    .button-container {
-        padding: 0 20px;
-    }
-
-    .btn {
-        width: 100%;
-        text-align: center;
-        font-size: 1rem;
-    }
 }
 
 @media screen and (max-width: 480px) {
-    .resume-section h1 {
-        font-size: 1.8rem;
+    .resume-section {
+        padding: 80px 10px 20px;
     }
 
     .resume-section embed {
         height: 70vh;
+    }
+
+    .resume-section h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
     }
 }
 

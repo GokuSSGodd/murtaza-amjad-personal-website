@@ -85,6 +85,7 @@ body {
     border: 3px solid #00ffff;
     background: rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+    pointer-events: none;
 }
 
 .profile-container::before {
@@ -118,6 +119,8 @@ body {
     height: 100%;
     object-fit: cover;
     transition: all 0.3s ease;
+    pointer-events: none;
+    border-radius: 50%;
 }
 
 .profile-image:hover {
@@ -129,7 +132,9 @@ body {
     width: 100%;
     position: relative;
     margin: 0 auto;
-    overflow: visible;
+    overflow: hidden;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .slider {
@@ -138,6 +143,7 @@ body {
     width: 100%;
     gap: 20px;
     cursor: grab;
+    transform: translateX(0);
 }
 
 .slider:active {
@@ -259,15 +265,17 @@ footer {
     }
 
     .slider-container {
-        width: 100%;
-        padding: 0;
-        margin: 0;
+        padding: 0 10px;
+        overflow: hidden;
+    }
+
+    .slider {
+        gap: 10px;
     }
 
     .slide {
-        width: 100%;
-        padding: 20px;
-        margin: 0;
+        flex: 0 0 100%;
+        margin-right: 0;
     }
 
     .about-section h1 {
