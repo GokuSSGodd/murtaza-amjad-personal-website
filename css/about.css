@@ -1,15 +1,24 @@
 /* General Styles */
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    background: linear-gradient(90deg, #3690eb 0%, #914dd1 100%);
+    overscroll-behavior: none;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(90deg, #3690eb 0%, #914dd1 100%);
+    background: linear-gradient(90deg, #3690eb 0%, #914dd1 100%) fixed;
     color: white;
     min-height: 100vh;
     overflow-x: hidden;
     width: 100%;
     position: relative;
     box-sizing: border-box;
+    overscroll-behavior-y: none;
+    -webkit-overflow-scrolling: touch;
 }
 
 *, *:before, *:after {
@@ -133,18 +142,26 @@ body {
     position: relative;
     margin: 0 auto;
     overflow: hidden;
-    padding: 0;
+    padding: 0 20px;
     box-sizing: border-box;
-    max-width: 800px;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translateZ(0);
+    -webkit-perspective: 1000;
 }
 
 .slider {
     display: flex;
     transition: transform 0.3s ease-out;
     width: 100%;
-    gap: 0;
+    gap: 20px;
     cursor: grab;
     transform: translateX(0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+.slider:active {
+    cursor: grabbing;
 }
 
 .slide {
@@ -161,9 +178,6 @@ body {
     opacity: 0.7;
     position: relative;
     overflow: hidden;
-    margin: 0;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 .slide::before {
@@ -244,6 +258,13 @@ footer {
     body {
         width: 100vw;
         overflow-x: hidden;
+        background-attachment: fixed;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-perspective: 1000;
+        perspective: 1000;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
     }
 
     .navbar {
@@ -265,30 +286,17 @@ footer {
     }
 
     .slider-container {
-        padding: 0;
+        padding: 0 10px;
         overflow: hidden;
-        width: 90%;
-        margin: 0 auto;
     }
 
     .slider {
-        gap: 0;
+        gap: 10px;
     }
 
     .slide {
-        padding: 20px;
-        margin: 0;
-        width: 100%;
-    }
-
-    .slide p {
-        font-size: 0.95rem;
-        line-height: 1.5;
-    }
-
-    .slide h2 {
-        font-size: 1.3rem;
-        margin-bottom: 15px;
+        flex: 0 0 100%;
+        margin-right: 0;
     }
 
     .about-section h1 {
