@@ -7,6 +7,21 @@ body {
     color: white;
     min-height: 100vh;
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navbar styling */
@@ -220,6 +235,11 @@ footer {
 
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
     .navbar {
         justify-content: center;
         gap: 10px;
@@ -233,11 +253,21 @@ footer {
     }
 
     .about-section {
+        width: 100%;
         padding: 100px 20px 80px;
+        margin: 0;
+    }
+
+    .slider-container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
 
     .slide {
+        width: 100%;
         padding: 20px;
+        margin: 0;
     }
 
     .about-section h1 {

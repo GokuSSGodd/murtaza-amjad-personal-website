@@ -7,6 +7,21 @@ body {
     color: white;
     min-height: 100vh;
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navbar styling */
@@ -108,6 +123,29 @@ footer {
 
 /* Media queries */
 @media screen and (max-width: 768px) {
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .resume-section {
+        width: 100%;
+        padding: 100px 20px 40px;
+        margin: 0;
+    }
+
+    .pdf-container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    iframe {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
     .navbar {
         justify-content: center;
         gap: 10px;
@@ -118,10 +156,6 @@ footer {
     .navbar a {
         padding: 8px 12px;
         font-size: 0.9rem;
-    }
-
-    .resume-section {
-        padding: 100px 20px 30px;
     }
 
     .resume-section h1 {
