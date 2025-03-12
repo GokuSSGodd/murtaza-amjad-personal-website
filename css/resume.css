@@ -70,7 +70,7 @@ body {
     margin-bottom: 40px;
 }
 
-.resume-section embed {
+.resume-section iframe {
     width: 100%;
     max-width: 800px;
     height: 80vh;
@@ -140,18 +140,17 @@ footer {
         margin: 0;
     }
 
-    .resume-section embed {
-        width: 95vw;
-        height: 80vh;
-        margin: 0 auto;
+    .resume-section iframe {
+        width: 100%;
+        height: 85vh;
+        margin: 0;
         padding: 0;
-        max-width: none;
-        transform: scale(0.95);
-        transform-origin: top center;
+        border: none;
+        -webkit-overflow-scrolling: touch;
     }
 
     .button-container {
-        width: 95%;
+        width: 90%;
         padding: 0;
         margin: 20px auto;
     }
@@ -178,10 +177,13 @@ footer {
         padding: 60px 5px 20px;
     }
 
-    .resume-section embed {
-        width: 98%;
-        height: 75vh;
-        transform: scale(0.9);
+    .resume-section iframe {
+        width: 100%;
+        height: 80vh;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: top left;
+        transform-origin: top left;
     }
 
     .resume-section h1 {
@@ -195,10 +197,9 @@ footer {
         padding: 60px 5px 20px;
     }
 
-    .resume-section embed {
+    .resume-section iframe {
         height: 85vh;
-        width: 98%;
-        transform: scale(0.9);
+        width: 100%;
     }
 }
 
