@@ -57,7 +57,7 @@ body {
 /* Resume Section */
 .resume-section {
     padding: 60px 20px 20px;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
     width: 100%;
@@ -74,12 +74,11 @@ body {
 }
 
 .resume-section embed {
-    width: 400px;
+    width: 700px;
     height: 100vh;
     border: none;
-    border-radius: 15px;
+    border-radius: 8px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-    background: white;
 }
 
 /* Button container */
@@ -141,7 +140,7 @@ footer {
     }
 
     .resume-section embed {
-        width: 350px;
+        width: 95%;
         height: 100vh;
     }
 
@@ -174,13 +173,13 @@ footer {
     }
 
     .resume-section embed {
-        width: 300px;
+        width: 98%;
         height: 100vh;
     }
 
     .resume-section h1 {
         font-size: 1.5rem;
-        margin: 0 0 20px 0;
+        margin: 0 0 15px 0;
     }
 }
 
