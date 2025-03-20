@@ -12,7 +12,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ## 🚀 Live Demo
 
-Check out the live version of the website here: [Live Demo](https://murtaza-amjad-portfolio-website.vercel.app/)
+Check out the live version of the website here: [Live Demo](https://murtaza-amjad-personal-website.vercel.app/)
 
 ## 🛠️ Technologies Used
 
