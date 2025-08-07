@@ -226,6 +226,63 @@ body {
     color: #FFD700;
 }
 
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 20px;
+    background: linear-gradient(90deg, #3690eb 0%, #914dd1 100%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form, .contact-info {
+    flex: 1;
+    padding: 200px;  /* Reduced from 200px to 40px */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    margin: 0 20px;  /* Added margin for spacing */
+}
+
+.contact-form p, .contact-info p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    text-align: center;
+    font-size: 1rem;  /* Adjusted font size */
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s;
+    border-radius: 0%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
 /* Footer styling */
 footer {
     text-align: center;
