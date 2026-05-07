@@ -1,320 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="icon" type="image/svg+xml" href="public/Murtaza Logo.svg">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>amjad/projects</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/project.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" type="image/svg+xml" href="public/Murtaza Logo.svg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>amjad/projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/projects.css">
 </head>
-
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="resume.html">Resume</a>
-        <a href="index.html#contact">Contact</a>
-    </nav>
-
-    <!-- Projects Section -->
-    <section class="projects-section">
-        <h1 class="section-title" data-aos="fade-up">Featured Projects</h1>
-        
-        <div class="project-cards-container">
-            <!-- Portfolio Website (Completed - Most Recent) -->
-            <div class="project-card" data-aos="fade-up">
-                <div class="project-header">
-                    <div class="project-type">
-                        <i class="fas fa-code"></i>
-                        Full Stack
-                    </div>
-                    <h2>Portfolio Website</h2>
-                    <div class="project-status">
-                        <span class="status completed">Completed</span>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">
-                        As the Lead Developer, I designed and implemented this modern, responsive portfolio website showcasing my projects and skills.
-                        Features interactive animations, dynamic content loading, and optimized performance.
-                    </p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">HTML5</span>
-                        <span class="tech-tag">CSS3</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">AOS</span>
-                    </div>
-                    <div class="project-highlights">
-                        <ul>
-                            <li>Responsive design for all devices</li>
-                            <li>Custom animations and transitions</li>
-                            <li>Optimized performance (95+ PageSpeed)</li>
-                            <li>Modern UI/UX principles</li>
-                        </ul>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/GokuSSGodd/murtaza-amjad-portfolio-website" class="btn" target="_blank">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                        <a href="index.html" class="btn" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Live Site
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Classify Project (Completed - November 2024) -->
-            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="project-header">
-                    <div class="project-type">
-                        <i class="fas fa-graduation-cap"></i>
-                        Full Stack
-                    </div>
-                    <h2>Classify - Course Recommendation System</h2>
-                    <div class="project-status">
-                        <span class="status completed">Completed</span>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">
-                        As a Front End Developer at WesHack 2024, I engineered a smart course selection tool that provides personalized course and professor recommendations for Wesleyan students. Features an intelligent matching algorithm and dynamic user profiling system.
-                    </p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Flask</span>
-                        <span class="tech-tag">Flask-SQLAlchemy</span>
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                    </div>
-                    <div class="project-highlights">
-                        <ul>
-                            <li>Smart matching algorithm for personalized course recommendations</li>
-                            <li>35% increase in search efficiency with autocomplete feature</li>
-                            <li>50% boost in signup completion through dynamic survey</li>
-                            <li>Responsive UI with modern design patterns</li>
-                        </ul>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/GokuSSGodd/Classify" class="btn" target="_blank">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Car Dealership Database (Completed - May 2023) -->
-            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="project-header">
-                    <div class="project-type">
-                        <i class="fas fa-database"></i>
-                        Backend Development
-                    </div>
-                    <h2>Car Dealership Database</h2>
-                    <div class="project-status">
-                        <span class="status completed">Completed</span>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">
-                        As the Technical Lead, I developed a robust car dealership management system utilizing hash tables and efficient data structures. Led the development of this C++ application that streamlines inventory management and enhances data retrieval operations.
-                    </p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">C++</span>
-                        <span class="tech-tag">OOP</span>
-                        <span class="tech-tag">Data Structures</span>
-                        <span class="tech-tag">Hash Tables</span>
-                    </div>
-                    <div class="project-highlights">
-                        <ul>
-                            <li>30% enhancement in user navigation with intuitive menu system</li>
-                            <li>40% increase in inventory processing speed</li>
-                            <li>25% reduction in code redundancy through OOP principles</li>
-                            <li>Efficient hash table implementation for data management</li>
-                        </ul>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/GokuSSGodd/Car-Dealership-Database" class="btn" target="_blank">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Secure File Transfer Platform (In Development - CPC Project) -->
-<div class="project-card" data-aos="fade-up" data-aos-delay="300">
-    <div class="project-header">
-        <div class="project-type">
-            <i class="fas fa-network-wired"></i>
-            Network Development
-        </div>
-        <h2>Cross-Platform File Transfer System – SendIt</h2>
-        <div class="project-status">
-            <span class="status in-progress">In Development</span>
-        </div>
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">ma<span class="accent">.</span></a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">home</a>
+      <a href="about.html" class="nav-link">about</a>
+      <a href="projects.html" class="nav-link active">projects</a>
+      <a href="resume.html" class="nav-link">resume</a>
+      <a href="index.html#contact" class="nav-link">contact</a>
     </div>
-    <div class="project-content">
-        <p class="project-description">
-            As President of the Computer Programming Club at the University of New Haven, I’m leading the development of <strong>SendIt</strong>—a cross-platform file transfer platform designed to offer fast, secure, and user-friendly file sharing between devices. The project is actively evolving from an academic MVP into a scalable application, with future features including authentication, database integration, and premium service options.
-        </p>
-        <div class="tech-stack">
-            <span class="tech-tag">Java</span>
-            <span class="tech-tag">JavaFX</span>
-            <span class="tech-tag">TCP/IP</span>
-            <span class="tech-tag">Socket Programming</span>
-            <span class="tech-tag">Spring Boot (Upcoming)</span>
-            <span class="tech-tag">MySQL (Planned)</span>
-        </div>
-        <div class="project-highlights">
-            <ul>
-                <li>Secure peer-to-peer file transfer using TCP and modular socket architecture</li>
-                <li>Session-based access with time-limited passcodes</li>
-                <li>Modern JavaFX GUI with file selection and transmission feedback</li>
-                <li>Cross-platform desktop compatibility (Windows/macOS)</li>
-            </ul>
-        </div>
-        <div class="current-phase">
-            <h3><i class="fas fa-clock"></i> Current Progress</h3>
-            <ul>
-                <li>Core file transfer and communication system implemented over TCP</li>
-                <li>GUI built using JavaFX with sender/receiver functionality</li>
-                <li>Access control logic with optional passcode expiry complete</li>
-                <li>Development branches established for modular team collaboration</li>
-            </ul>
-        </div>
-        <div class="next-phase">
-            <h3><i class="fas fa-cogs"></i> Next Steps</h3>
-            <ul>
-                <li>Implement Spring Boot backend for user management and API endpoints</li>
-                <li>Integrate MySQL for persistent user data and file activity logs</li>
-                <li>Add login and authentication system (Auth0/Spring Security)</li>
-                <li>Explore premium-tier features with payment integration (Stripe or similar)</li>
-            </ul>
-        </div>
-    </div>
-</div>
+    <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-
-            <!-- IBM DevOps Professional Certificate (In Progress) -->
-            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="project-header">
-                    <div class="project-type">
-                        <i class="fas fa-certificate"></i>
-                        Professional Development
-                    </div>
-                    <h2>IBM DevOps & Software Engineering Certificate</h2>
-                    <div class="project-status">
-                        <span class="status in-progress">In Progress</span>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">
-                        Pursuing a comprehensive professional certification in DevOps and Software Engineering from IBM, focusing on application security, AI development with Python, and modern DevOps practices. This intensive 15-course program includes hands-on projects in secure application development, AI applications with Flask, and cloud-native architectures.
-                    </p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Flask</span>
-                        <span class="tech-tag">AI Development</span>
-                        <span class="tech-tag">Application Security</span>
-                        <span class="tech-tag">DevOps</span>
-                        <span class="tech-tag">Cloud Computing</span>
-                    </div>
-                    <div class="project-highlights">
-                        <ul>
-                            <li>Building AI applications using Python and Flask frameworks</li>
-                            <li>Implementing security best practices for application development</li>
-                            <li>Creating secure CI/CD pipelines with automated testing</li>
-                            <li>Developing cloud-native applications with security focus</li>
-                        </ul>
-                    </div>
-                    <div class="current-phase">
-                        <h3><i class="fas fa-clock"></i> Current Progress</h3>
-                        <ul>
-                            <li>✓ Completed: Introduction to DevOps</li>
-                            <li>→ Current: Introduction to Cloud Computing</li>
-                            <li>Upcoming: Introduction to Agile Development and Scrum</li>
-                            <li class="future-focus">Future Focus: Python for Data Science, AI, and Development & Application Security for Developers</li>
-                            <li>Expected completion: 6 months</li>
-                        </ul>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://www.coursera.org/professional-certificates/devops-and-software-engineering" class="btn" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Course Details
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- AI Security Project (In Progress) -->
-            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="project-header">
-                    <div class="project-type">
-                        <i class="fas fa-shield-alt"></i>
-                        AI Security
-                    </div>
-                    <h2>AI-Powered Threat Detection System</h2>
-                    <div class="project-status">
-                        <span class="status in-progress">In Progress</span>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">
-                        As Project Lead and AI Developer, developing an advanced threat detection system using machine learning to identify and prevent cyber attacks in real-time.
-                        Implements neural networks and deep learning for pattern recognition in network traffic.
-                    </p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">Scikit-learn</span>
-                        <span class="tech-tag">Docker</span>
-                    </div>
-                    <div class="project-highlights">
-                        <ul>
-                            <li>Real-time threat detection with 95% accuracy</li>
-                            <li>Custom neural network architecture</li>
-                            <li>Automated response system</li>
-                            <li>Scalable containerized deployment</li>
-                        </ul>
-                    </div>
-                    <div class="current-phase">
-                        <h3><i class="fas fa-clock"></i> Current Phase: Planning & Research</h3>
-                        <ul>
-                            <li>Setting up Agile development framework with 2-week sprint cycles</li>
-                            <li>Researching state-of-the-art ML models for threat detection</li>
-                            <li>Defining DevOps pipeline and infrastructure requirements</li>
-                            <li>Creating product backlog and sprint planning documents</li>
-                            <li>Next: Begin first development sprint with model architecture design</li>
-                        </ul>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="btn" target="_blank">
-                            <i class="fab fa-github"></i> Coming Soon
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="social-icons">
-        <a href="https://github.com/GokuSSGodd" target="_blank">
-            <img src="public/github-mark-white.png" alt="GitHub" class="social-icon">
-        </a>
+  <main class="page-content">
+    <div class="page-hero">
+      <span class="page-tag">// projects</span>
+      <h1>What I've<br>Been Building</h1>
+      <p>A collection of projects spanning full-stack development, network programming, AI/ML systems, and cybersecurity tooling.</p>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <p class="copyright-text">© Copyright 2025 Murtaza Amjad</p>
-    </footer>
+    <!-- Filter bar -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+      <button class="filter-btn" data-filter="in-progress">In Progress</button>
+      <button class="filter-btn" data-filter="full-stack">Full Stack</button>
+      <button class="filter-btn" data-filter="security">Security / AI</button>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/projects.js"></script>
+    <!-- Projects -->
+    <div class="projects-list" id="projectsList">
+
+      <!-- SendIt -->
+      <article class="proj-card reveal" data-tags="in-progress network">
+        <div class="proj-card-left">
+          <div class="proj-num">01</div>
+          <div class="proj-meta">
+            <span class="proj-status wip">In Development</span>
+            <span class="proj-category">Network / Full Stack</span>
+          </div>
+        </div>
+        <div class="proj-card-body">
+          <h2 class="proj-title">SendIt — Cross-Platform File Transfer</h2>
+          <p class="proj-desc">Leading this project as President of the Computer Programming Club at UNH. SendIt is a secure, cross-platform file transfer application built on TCP socket programming with a JavaFX GUI. Designed to evolve from academic MVP into a scalable production app with Spring Boot + MySQL backend and optional premium tier.</p>
+
+          <div class="proj-highlights">
+            <div class="highlight-item">
+              <span class="h-icon">⬡</span>
+              <span>Secure P2P transfer via TCP with modular socket architecture</span>
+            </div>
+            <div class="highlight-item">
+              <span class="h-icon">⬡</span>
+              <span>Session-based access control with time-limited passcodes</span>
+            </div>
+            <div class="highlight-item">
+              <span class="h-icon">⬡</span>
+              <span>Modern JavaFX GUI — cross-platform (Windows & macOS)</span>
+            </div>
+            <div class="highlight-item">
+              <span class="h-icon">⬡</span>
+              <span>Modular dev branches for team collaboration</span>
+            </div>
+          </div>
+
+          <div class="proj-roadmap">
+            <span class="roadmap-label">Roadmap</span>
+            <div class="roadmap-items">
+              <span class="roadmap-done">✓ Core TCP transfer</span>
+              <span class="roadmap-done">✓ JavaFX GUI</span>
+              <span class="roadmap-done">✓ Passcode access</span>
+              <span class="roadmap-next">→ Spring Boot API</span>
+              <span class="roadmap-next">→ MySQL persistence</span>
+              <span class="roadmap-next">→ Auth (Auth0)</span>
+            </div>
+          </div>
+
+          <div class="proj-stack">
+            <span>Java</span><span>JavaFX</span><span>TCP/IP</span>
+            <span>Socket Programming</span><span>Spring Boot (Upcoming)</span><span>MySQL (Planned)</span>
+          </div>
+        </div>
+        <div class="proj-card-right">
+          <span class="link-soon">Coming to GitHub</span>
+        </div>
+      </article>
+
+      <!-- Classify -->
+      <article class="proj-card reveal" data-tags="completed full-stack">
+        <div class="proj-card-left">
+          <div class="proj-num">02</div>
+          <div class="proj-meta">
+            <span class="proj-status done">Completed</span>
+            <span class="proj-category">Full Stack</span>
+          </div>
+        </div>
+        <div class="proj-card-body">
+          <h2 class="proj-title">Classify — Course Recommendation System</h2>
+          <p class="proj-desc">Built at WesHack 2024 as Front End Developer. A smart course selection tool delivering personalized professor and course recommendations for Wesleyan University students. Features an intelligent matching algorithm, dynamic user profiling, and autocomplete-driven search that cut lookup time significantly.</p>
+
+          <div class="proj-highlights">
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>Smart matching algorithm for personalized recommendations</span></div>
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>35% increase in search efficiency via autocomplete</span></div>
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>50% boost in signup completion via dynamic onboarding survey</span></div>
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>Responsive UI with modern Flask + SQLAlchemy backend</span></div>
+          </div>
+
+          <div class="proj-stack">
+            <span>Python</span><span>Flask</span><span>Flask-SQLAlchemy</span>
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+        <div class="proj-card-right">
+          <a href="https://github.com/GokuSSGodd/Classify" target="_blank" class="proj-link-btn">GitHub →</a>
+        </div>
+      </article>
+
+      <!-- Car Dealership DB -->
+      <article class="proj-card reveal" data-tags="completed backend">
+        <div class="proj-card-left">
+          <div class="proj-num">03</div>
+          <div class="proj-meta">
+            <span class="proj-status done">Completed</span>
+            <span class="proj-category">Backend / Systems</span>
+          </div>
+        </div>
+        <div class="proj-card-body">
+          <h2 class="proj-title">Car Dealership Database System</h2>
+          <p class="proj-desc">C++ inventory management system built as Technical Lead. Leverages hash tables, OOP design patterns, and a custom menu system to streamline vehicle inventory management and data retrieval. Focused on performance optimization and code quality.</p>
+
+          <div class="proj-highlights">
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>40% increase in inventory processing speed via hash tables</span></div>
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>30% better navigation UX with intuitive menu system</span></div>
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>25% code redundancy reduction through OOP principles</span></div>
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>Efficient hash table implementation for O(1) avg lookups</span></div>
+          </div>
+
+          <div class="proj-stack">
+            <span>C++</span><span>OOP</span><span>Data Structures</span><span>Hash Tables</span>
+          </div>
+        </div>
+        <div class="proj-card-right">
+          <a href="https://github.com/GokuSSGodd/Car-Dealership-Database" target="_blank" class="proj-link-btn">GitHub →</a>
+        </div>
+      </article>
+
+      <!-- Portfolio Website -->
+      <article class="proj-card reveal" data-tags="completed full-stack">
+        <div class="proj-card-left">
+          <div class="proj-num">04</div>
+          <div class="proj-meta">
+            <span class="proj-status done">Completed</span>
+            <span class="proj-category">Full Stack</span>
+          </div>
+        </div>
+        <div class="proj-card-body">
+          <h2 class="proj-title">Portfolio Website</h2>
+          <p class="proj-desc">Lead Developer of this responsive personal portfolio. Built from scratch with HTML5, CSS3, and vanilla JavaScript. Features scroll-triggered animations, a dynamic slider, mobile-first responsive design, and 95+ PageSpeed score.</p>
+
+          <div class="proj-highlights">
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>Fully responsive across all device sizes</span></div>
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>Custom CSS animations and scroll-driven interactions</span></div>
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>95+ PageSpeed score — optimized performance</span></div>
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>Deployed on Vercel with custom domain</span></div>
+          </div>
+
+          <div class="proj-stack">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>AOS</span><span>Vercel</span>
+          </div>
+        </div>
+        <div class="proj-card-right">
+          <a href="https://github.com/GokuSSGodd/murtaza-amjad-portfolio-website" target="_blank" class="proj-link-btn">GitHub →</a>
+          <a href="https://murtaza-amjad-personal-website.vercel.app/" target="_blank" class="proj-link-btn secondary">Live →</a>
+        </div>
+      </article>
+
+      <!-- AI Threat Detection -->
+      <article class="proj-card reveal" data-tags="in-progress security">
+        <div class="proj-card-left">
+          <div class="proj-num">05</div>
+          <div class="proj-meta">
+            <span class="proj-status wip">In Progress</span>
+            <span class="proj-category">AI Security</span>
+          </div>
+        </div>
+        <div class="proj-card-body">
+          <h2 class="proj-title">AI-Powered Threat Detection System</h2>
+          <p class="proj-desc">Project Lead developing an advanced ML-powered threat detection system for real-time cyber attack identification. Uses neural networks and deep learning for pattern recognition in network traffic. Currently in planning and architecture phase with Agile sprint framework in place.</p>
+
+          <div class="proj-highlights">
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>Real-time threat detection targeting 95%+ accuracy</span></div>
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>Custom neural network architecture for traffic analysis</span></div>
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>Containerized deployment via Docker</span></div>
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>Automated response system integrated with detection pipeline</span></div>
+          </div>
+
+          <div class="proj-roadmap">
+            <span class="roadmap-label">Current Phase</span>
+            <div class="roadmap-items">
+              <span class="roadmap-done">✓ Agile framework setup</span>
+              <span class="roadmap-done">✓ ML model research</span>
+              <span class="roadmap-next">→ Model architecture design</span>
+              <span class="roadmap-next">→ Dataset collection</span>
+              <span class="roadmap-next">→ Training pipeline</span>
+            </div>
+          </div>
+
+          <div class="proj-stack">
+            <span>Python</span><span>TensorFlow</span><span>Scikit-learn</span><span>Docker</span>
+          </div>
+        </div>
+        <div class="proj-card-right">
+          <span class="link-soon">In Development</span>
+        </div>
+      </article>
+
+      <!-- IBM Certificate -->
+      <article class="proj-card reveal" data-tags="in-progress">
+        <div class="proj-card-left">
+          <div class="proj-num">06</div>
+          <div class="proj-meta">
+            <span class="proj-status wip">In Progress</span>
+            <span class="proj-category">Certification</span>
+          </div>
+        </div>
+        <div class="proj-card-body">
+          <h2 class="proj-title">IBM DevOps & Software Engineering Certificate</h2>
+          <p class="proj-desc">Pursuing a comprehensive 15-course professional certification from IBM. Covers application security, AI development with Python and Flask, CI/CD pipelines, cloud-native architectures, and modern DevOps practices. Hands-on labs alongside theoretical content.</p>
+
+          <div class="proj-roadmap">
+            <span class="roadmap-label">Progress</span>
+            <div class="roadmap-items">
+              <span class="roadmap-done">✓ Intro to DevOps</span>
+              <span class="roadmap-next">→ Cloud Computing (current)</span>
+              <span class="roadmap-next">→ Agile &amp; Scrum</span>
+              <span class="roadmap-next">→ Python for AI/Data Science</span>
+              <span class="roadmap-next">→ Application Security</span>
+            </div>
+          </div>
+
+          <div class="proj-stack">
+            <span>Python</span><span>Flask</span><span>AI Dev</span>
+            <span>App Security</span><span>DevOps</span><span>Cloud Computing</span>
+          </div>
+        </div>
+        <div class="proj-card-right">
+          <a href="https://www.coursera.org/professional-certificates/devops-and-software-engineering" target="_blank" class="proj-link-btn">Coursera →</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <span class="footer-logo">ma<span class="accent">.</span></span>
+    <span class="footer-copy">© 2025 Murtaza Amjad</span>
+    <div class="footer-links">
+      <a href="https://github.com/GokuSSGodd" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/murtaza-amjad-93136025a/" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="js/shared.js"></script>
+  <script src="js/projects.js"></script>
 </body>
-
 </html>
