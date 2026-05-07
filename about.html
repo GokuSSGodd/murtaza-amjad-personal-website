@@ -1,157 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="icon" type="image/svg+xml" href="public/Murtaza Logo.svg">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>amjad/about</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/about.css">
+  <link rel="icon" type="image/svg+xml" href="public/Murtaza Logo.svg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>amjad/about</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/about.css">
 </head>
-
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="resume.html">Resume</a>
-        <a href="index.html#contact">Contact</a>
-    </nav>
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">ma<span class="accent">.</span></a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">home</a>
+      <a href="about.html" class="nav-link active">about</a>
+      <a href="projects.html" class="nav-link">projects</a>
+      <a href="resume.html" class="nav-link">resume</a>
+      <a href="index.html#contact" class="nav-link">contact</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-    <!-- About Me Section -->
-    <section class="about-section">
-        <h1>About Me</h1>
-        <div class="profile-container">
-            <img src="public/Murtaza Profile Pic.jpg" alt="Murtaza Amjad" class="profile-image">
+  <main class="page-content">
+    <div class="page-hero">
+      <span class="page-tag">// about me</span>
+      <h1>The Person<br>Behind the Code</h1>
+      <p>Computer Science student, club president, aspiring software engineer and AI security specialist.</p>
+    </div>
+
+    <!-- Intro -->
+    <div class="about-intro reveal">
+      <div class="profile-wrap">
+        <img src="public/Murtaza Profile Pic.jpg" alt="Murtaza Amjad" class="profile-img">
+        <div class="profile-badge">
+          <span class="dot pulse"></span>
+          <span>Open to opportunities</span>
         </div>
-
-        <!-- Mobile Dropdown -->
-        <div class="mobile-dropdown">
-            <button class="dropdown-btn">Introduction 👋</button>
-            <div class="dropdown-content">
-                <p>Hello! I'm <strong class="highlight">Murtaza Amjad</strong>, a passionate Computer Science student at the 
-                <strong>University of New Haven</strong> with aspirations to become a <strong class="highlight">Software Engineer</strong> 
-                and <strong class="highlight">AI Security Specialist</strong>. My journey in technology is driven by a deep fascination 
-                with artificial intelligence and its intersection with cybersecurity. I believe in the power of 
-                technology to create positive change while ensuring it remains secure and ethical.</p>
-            </div>
-
-            <button class="dropdown-btn">Academic Journey 📚</button>
-            <div class="dropdown-content">
-                <p>As a student, I'm immersing myself in both theoretical knowledge and practical applications of 
-                <span class="highlight">software engineering, AI, and security</span>. I'm developing a strong foundation in cybersecurity principles, 
-                machine learning concepts, and software development. My coursework includes <span class="highlight">advanced algorithms, 
-                machine learning, network security, and ethical hacking</span>. I actively participate in coding competitions, 
-                hackathons, and security challenges to apply my knowledge in real-world scenarios.</p>
-            </div>
-
-            <button class="dropdown-btn">Technical Skills 💻</button>
-            <div class="dropdown-content">
-                <p>I'm actively learning and working with <strong class="highlight">Python</strong> for AI/ML applications with 
-                <strong class="highlight">TensorFlow</strong> and <strong class="highlight">scikit-learn</strong>. I'm also gaining experience with Front End Development with <strong class="highlight">JavaScript</strong>, 
-                <strong class="highlight">HTML5</strong>, and <strong class="highlight">CSS</strong>. My recent projects include developing a <span class="highlight">portfolio website, 
-                course recommendation system, and car dealership management system</span>. Some of my current projects I am working on are 
-                <span class="highlight">cross-platform file transfer system software, IBM DevOps & Software Engineering Certificate, and an AI-powered threat detection system</span>. I'm also 
-                exploring cloud computing and cloud security, containerization with Docker, and CI/CD pipelines.</p>
-            </div>
-
-            <button class="dropdown-btn">Career Goals 🎯</button>
-            <div class="dropdown-content">
-                <p>I'm passionate about the latest developments in <span class="highlight">AI security and cybersecurity</span>. I dedicate time to 
-                personal projects, hackathons, online courses/certifications, and research in areas like <span class="highlight">adversarial machine learning and 
-                AI model security</span>. My goal is to contribute to the software development of several robust AI systems that can withstand 
-                sophisticated cyber attacks. I'm particularly interested in developing <span class="highlight">AI-powered security solutions</span>, 
-                exploring software development, and researching ways to make machine learning 
-                models more resilient to adversarial attacks.</p>
-            </div>
-
-            <button class="dropdown-btn">Personal Life 🌟</button>
-            <div class="dropdown-content">
-                <p>As a <span class="highlight">practicing Muslim</span>, I dedicate time to deepening my understanding of Islam and its principles. 
-                I'm an avid sports enthusiast who enjoys gym workouts, playing sports, and watching anime. 
-                In sports, I follow soccer closely, particularly the LaLiga and Champions League. Physical 
-                fitness is a key part of my daily routine, helping me maintain a balanced lifestyle while pursuing 
-                my technical & professional ambitions.</p>
-            </div>
-
-            <button class="dropdown-btn">Community 👨‍👩‍👧‍👦</button>
-            <div class="dropdown-content">
-                <p>Family and community are central to who I am. I cherish spending quality time with family and friends, 
-                sharing meals, engaging in discussions, and exploring new places together. These relationships shape 
-                my perspective on life. I actively participate in tech meetups, mentor junior 
-                students in programming, and volunteer at local STEM education initiatives. 
-                As <span class="highlight">President of the Computer Programming Club</span> at the University of New Haven, I organize events and workshops to foster learning and professional growth to club members. 
-                I believe in giving back to the community and using my skills to help others learn and grow in the field of technology.</p>
-            </div>
+      </div>
+      <div class="intro-text">
+        <h2>Hello, I'm Murtaza</h2>
+        <p>I'm a <strong>Computer Science student at the University of New Haven</strong>, driven by a deep curiosity about how AI and security intersect. My goal is to build robust, intelligent systems — software that's both powerful and resilient against modern threats.</p>
+        <p>I believe in learning by doing: every project I take on is an opportunity to push beyond what I already know and into something unfamiliar. From hackathon sprints to semester-long builds, I try to ship real things that solve real problems.</p>
+        <div class="intro-socials">
+          <a href="https://github.com/GokuSSGodd" target="_blank" class="social-pill">GitHub</a>
+          <a href="https://www.linkedin.com/in/murtaza-amjad-93136025a/" target="_blank" class="social-pill">LinkedIn</a>
+          <a href="mailto:murtazaamjad0519@gmail.com" class="social-pill">Email</a>
         </div>
+      </div>
+    </div>
 
-        <!-- Desktop Slider -->
-        <div class="slider-container">
-            <div class="slider">
-                <div class="slide active">
-                    <h2>Introduction 👋</h2>
-                    <p>Hello! I'm <strong class="highlight">Murtaza Amjad</strong>, a passionate Computer Science student at the 
-                    <strong>University of New Haven</strong> with aspirations to become a <strong class="highlight">Software Engineer</strong> 
-                    and <strong class="highlight">AI Security Specialist</strong>. My journey in technology is driven by a deep fascination 
-                    with artificial intelligence and its intersection with cybersecurity. I believe in the power of 
-                    technology to create positive change while ensuring it remains secure and ethical.</p>
-                </div>
-                <div class="slide">
-                    <h2>Academic Journey 📚</h2>
-                    <p>As a student, I'm immersing myself in both theoretical knowledge and practical applications of 
-                    <span class="highlight">software engineering, AI, and security</span>. I'm developing a strong foundation in cybersecurity principles, 
-                    machine learning concepts, and software development. My coursework includes <span class="highlight">advanced algorithms, 
-                    machine learning, network security, and ethical hacking</span>. I actively participate in coding competitions, 
-                    hackathons, and security challenges to apply my knowledge in real-world scenarios.</p>
-                </div>
-                <div class="slide">
-                    <h2>Technical Skills 💻</h2>
-                    <p>I'm actively learning and working with <strong class="highlight">Python</strong> for AI/ML applications with 
-                    <strong class="highlight">TensorFlow</strong> and <strong class="highlight">scikit-learn</strong>. I'm also gaining experience with Front End Development with <strong class="highlight">JavaScript</strong>, 
-                    <strong class="highlight">HTML5</strong>, and <strong class="highlight">CSS</strong>. My recent projects include developing a <span class="highlight">portfolio website, 
-                    course recommendation system, and car dealership management system</span>. Some of my current projects I am working on are 
-                    <span class="highlight">cross-platform file transfer system software, IBM DevOps & Software Engineering Certificate, and an AI-powered threat detection system</span>. I'm also 
-                    exploring cloud computing and cloud security, containerization with Docker, and CI/CD pipelines.</p>
-                </div>
-                <div class="slide">
-                    <h2>Career Goals 🎯</h2>
-                    <p>I'm passionate about the latest developments in <span class="highlight">AI security and cybersecurity</span>. I dedicate time to 
-                    personal projects, hackathons, online courses/certifications, and research in areas like <span class="highlight">adversarial machine learning and 
-                    AI model security</span>. My goal is to contribute to the software development of several robust AI systems that can withstand 
-                    sophisticated cyber attacks. I'm particularly interested in developing <span class="highlight">AI-powered security solutions</span>, 
-                    exploring software development, and researching ways to make machine learning 
-                    models more resilient to adversarial attacks.</p>
-                </div>
-                <div class="slide">
-                    <h2>Personal Life 🌟</h2>
-                    <p>As a <span class="highlight">practicing Muslim</span>, I dedicate time to deepening my understanding of Islam and its principles. 
-                    I'm an avid sports enthusiast who enjoys gym workouts, playing sports, and watching anime. 
-                    In sports, I follow soccer closely, particularly the LaLiga and Champions League. Physical 
-                    fitness is a key part of my daily routine, helping me maintain a balanced lifestyle while pursuing 
-                    my technical & professional ambitions.</p>
-                </div>
-                <div class="slide">
-                    <h2>Community 👨‍👩‍👧‍👦</h2>
-                    <p>Family and community are central to who I am. I cherish spending quality time with family and friends, 
-                    sharing meals, engaging in discussions, and exploring new places together. These relationships shape 
-                    my perspective on life. I actively participate in tech meetups, mentor junior 
-                    students in programming, and volunteer at local STEM education initiatives. 
-                    As <span class="highlight">President of the Computer Programming Club</span> at the University of New Haven, I organize events and workshops to foster learning and professional growth to club members. 
-                    I believe in giving back to the community and using my skills to help others learn and grow in the field of technology.</p>
-                </div>
-            </div>
-            <div class="dots"></div>
+    <!-- Sections grid -->
+    <div class="about-sections">
+
+      <div class="about-block reveal">
+        <span class="block-num">01</span>
+        <h3>Academic Journey</h3>
+        <p>I'm building a strong foundation in both theory and practice — coursework in <strong>advanced algorithms, machine learning, network security, and ethical hacking</strong>. I supplement lectures with hackathons, coding competitions, and security challenges to keep skills sharp and applied.</p>
+      </div>
+
+      <div class="about-block reveal">
+        <span class="block-num">02</span>
+        <h3>Career Goals</h3>
+        <p>I want to develop <strong>AI-powered security solutions</strong> that protect against sophisticated cyber attacks — particularly in adversarial machine learning and AI model security. My target is to contribute to systems where intelligence and resilience reinforce each other.</p>
+      </div>
+
+      <div class="about-block reveal">
+        <span class="block-num">03</span>
+        <h3>Club Leadership</h3>
+        <p>As <strong>President of the Computer Programming Club at UNH</strong>, I organize workshops, tech talks, and collaborative coding events. I mentor junior students, foster a strong learning community, and lead our flagship project — <strong>SendIt</strong>, our cross-platform file transfer platform.</p>
+      </div>
+
+      <div class="about-block reveal">
+        <span class="block-num">04</span>
+        <h3>Beyond Code</h3>
+        <p>I'm a practicing Muslim, LaLiga and Champions League soccer fan, anime watcher, and regular at the gym. I believe physical discipline and mental discipline reinforce each other. Family and community are central to who I am and how I approach life.</p>
+      </div>
+
+    </div>
+
+    <!-- Certificates -->
+    <div class="certs-section reveal">
+      <span class="section-label">Certificates & Recognition</span>
+      <div class="certs-grid">
+        <div class="cert-card">
+          <img src="public/Webster YB Certificate - Murtaza Amjad.png" alt="Webster Bank Certificate" class="cert-img">
+          <p class="cert-name">Webster Bank — Lean Six Sigma Yellow Belt</p>
         </div>
-    </section>
+        <div class="cert-card">
+          <img src="public/CWA Certificate.png" alt="CWA Certificate" class="cert-img">
+          <p class="cert-name">Cybersecurity Excellence — NIST Framework & Threat Analysis</p>
+        </div>
+      </div>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <p class="copyright-text">© Copyright 2025 Murtaza Amjad</p>
-    </footer>
+  </main>
 
-    <script src="js/about.js"></script>
+  <footer class="footer">
+    <span class="footer-logo">ma<span class="accent">.</span></span>
+    <span class="footer-copy">© 2025 Murtaza Amjad</span>
+    <div class="footer-links">
+      <a href="https://github.com/GokuSSGodd" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/murtaza-amjad-93136025a/" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="js/shared.js"></script>
 </body>
-
 </html>
