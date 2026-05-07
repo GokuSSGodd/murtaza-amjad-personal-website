@@ -1,0 +1,72 @@
+/* resume.css */
+.resume-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+.resume-block {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.resume-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px 32px;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.resume-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.resume-sub {
+  font-size: 0.78rem;
+  color: var(--text-faint);
+}
+
+.resume-embed-wrap {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  min-height: 600px;
+}
+
+.resume-embed {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+}
+
+.embed-fallback {
+  display: none;
+  position: absolute;
+  inset: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  background: var(--bg-3);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 40px;
+}
+
+@media (max-width: 768px) {
+  .resume-header { padding: 20px; }
+  .resume-embed-wrap { height: 70vh; }
+  .resume-grid { gap: 32px; }
+}
