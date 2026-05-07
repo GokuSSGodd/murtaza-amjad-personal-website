@@ -1,96 +1,64 @@
-# Murtaza Amjad - Portfolio Website
+# Portfolio Redesign — Drop-in Replacement Guide
 
-Welcome to my personal portfolio website! This project showcases my skills, projects, and professional journey as an aspiring Software Engineer and AI Security Specialist. The website is built using **HTML**, **CSS**, and **JavaScript**, with a focus on responsive design and modern UI/UX principles.
+## What Changed
 
-## 🌟 Features
+Complete visual overhaul. Same content, completely new design system:
 
-- **Responsive Design**: The website is fully responsive and works seamlessly on all devices (desktop, tablet, and mobile).
-- **Interactive Animations**: Includes smooth animations and transitions for an engaging user experience.
-- **Dynamic Content**: Features a slider for the "About Me" section and a project showcase with detailed descriptions.
-- **Modern UI/UX**: Clean and intuitive design with a focus on user experience.
-- **Contact Section**: Easy-to-use contact form and social media links for connecting with me.
+- **Theme**: Dark background (`#0a0a0b`) with electric green accent (`#00e5a0`)
+- **Fonts**: JetBrains Mono (body/code feel) + Syne (headings)
+- **Design language**: Minimal, technical, grid-based — no gradients, no glow, no clutter
+- **New features**: Animated terminal on homepage, filter bar on projects page, scroll reveal animations
 
-## 🚀 Live Demo
+## File Structure
 
-Check out the live version of the website here: [Live Demo](https://murtaza-amjad-personal-website.vercel.app/)
+```
+portfolio/
+├── index.html          ← Home page (hero + terminal + experience + skills + projects + contact)
+├── about.html          ← About page (profile + 4-section grid + certificates)
+├── projects.html       ← Projects page (filterable list with roadmaps)
+├── resume.html         ← Resume page (side-by-side PDF embeds)
+├── css/
+│   ├── shared.css      ← Nav, footer, base tokens, buttons (used by all pages)
+│   ├── index.css       ← Home page styles (includes terminal, hero, skills grid)
+│   ├── about.css       ← About page styles
+│   ├── projects.css    ← Projects list + filter bar
+│   └── resume.css      ← Resume embed layout
+├── js/
+│   ├── shared.js       ← Nav toggle + scroll reveal (used by about, projects, resume)
+│   ├── index.js        ← Terminal animation + home page interactions
+│   └── projects.js     ← Filter button logic
+└── public/             ← Keep all your existing assets here (unchanged)
+    ├── Murtaza Profile Pic.jpg
+    ├── Webster YB Certificate - Murtaza Amjad.png
+    ├── CWA Certificate.png
+    ├── Murtaza Logo.svg
+    ├── Murtaza Amjad Software Engineer _ AI Security Engineer.pdf
+    └── Murtaza Amjad Imformation Security Officer _ Security Engineer.pdf
+```
 
-## 🛠️ Technologies Used
+## Drop-in Instructions
 
-- **Frontend**: HTML5, CSS3, JavaScript
-- **Animations**: AOS (Animate On Scroll) Library
-- **Icons**: Font Awesome
-- **Fonts**: Google Fonts (Orbitron)
+1. Replace your existing HTML files with these 4 new ones
+2. Replace your `css/` folder with the new `css/` folder
+3. Replace your `js/` folder with the new `js/` folder
+4. Keep your `public/` folder exactly as-is — all asset paths are preserved
 
-## 📂 Project Structure
+## Adding New Content
 
-portfolio-website/
+**New project**: Add a new `<article class="proj-card reveal" data-tags="completed full-stack">` block to `projects.html`. Copy any existing card and update the content.
 
-- about.html # About Me page
-- index.html # Home page
-- projects.html # Projects page
-- resume.html # Resume page
-- README.md # This file
+**New experience**: Add a new `.exp-item` div to the experience section in `index.html`.
 
-📂 css/ # CSS files for styling
+**New skill**: Add a `<span class="skill-item">SkillName</span>` inside any `.skill-list` in `index.html`.
 
-- about.css # Styles for the About page
-- index.css # Styles for the Home page
-- project.css # Styles for the Projects page
-- resume.css # Styles for the Resume page
+## Color tokens (css/shared.css)
 
-📂 js/ # JavaScript files for interactivity
-
-- about.js # Slider functionality for About page
-- index.js # Animations for Home page
-- projects.js # Animations for Projects page
-- resume.js # Animations for Resume page
-
-📂 public/ # Static assets (images, PDFs, etc.)
-
-- Murtaza-Picture.png # Profile picture
-- SWE Murtaza Resume.pdf # Resume PDF
-- banner.jpg # Banner picture
-- social-icons/ # Social media icons
-  Copy
-
-## 🛠️ Setup Instructions
-
-### Prerequisites
-
-- A modern web browser (Chrome, Firefox, Safari, etc.)
-- A code editor (e.g., Visual Studio Code)
-
-### Steps to Run Locally
-
-1. **Clone the Repository**:
-
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
-
-    Open the Project:
-
-        Open the index.html file in your browser to view the homepage.
-
-        Alternatively, use a live server extension in your code editor to serve the files locally.
-
-    Explore the Website:
-
-        Navigate through the different pages (Home, About, Projects, Resume) using the navigation bar.
-   ```
-
-🤝 Contributing
-
-Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to contact me.
-
-📧 Contact
-
-If you have any questions or would like to connect, feel free to reach out to me:
-
-    Email: murtazaamjad0519@gmail.com
-
-    LinkedIn: Murtaza Amjad
-
-    GitHub: GokuSSGodd
-
-Thank you for visiting my portfolio repository! 😊
+| Variable | Value | Use |
+|---|---|---|
+| `--accent` | `#00e5a0` | Primary accent color |
+| `--bg` | `#0a0a0b` | Page background |
+| `--bg-2` | `#111113` | Card backgrounds |
+| `--bg-3` | `#18181c` | Hover states, tags |
+| `--text` | `#e8e8e4` | Primary text |
+| `--text-muted` | `#888884` | Secondary text |
+| `--text-faint` | `#444440` | Hints, labels |
