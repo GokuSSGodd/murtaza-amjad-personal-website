@@ -14,9 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const tags = card.dataset.tags || '';
         const show = filter === 'all'
           || (filter === 'completed' && tags.includes('completed'))
-          || (filter === 'in-progress' && tags.includes('in-progress'))
-          || (filter === 'full-stack' && tags.includes('full-stack'))
-          || (filter === 'security' && (tags.includes('security') || tags.includes('network')));
+          || (filter === 'in-progress' && tags.includes('in-progress'));
 
         card.classList.toggle('hidden', !show);
       });
