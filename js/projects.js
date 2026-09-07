@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const btns = document.querySelectorAll('.filter-btn');
-  const cards = document.querySelectorAll('.proj-card');
+  const cards = document.querySelectorAll('#projectsList .proj-card');
 
   btns.forEach(btn => {
     btn.addEventListener('click', () => {

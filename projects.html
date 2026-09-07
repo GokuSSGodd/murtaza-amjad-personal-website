@@ -38,70 +38,132 @@
       <button class="filter-btn" data-filter="completed">Completed</button>
       <button class="filter-btn" data-filter="in-progress">In Progress</button>
       <button class="filter-btn" data-filter="full-stack">Full Stack</button>
-      <button class="filter-btn" data-filter="security">Security / AI</button>
+      <button class="filter-btn" data-filter="security">Security</button>
     </div>
 
     <!-- Projects -->
     <div class="projects-list" id="projectsList">
 
       <!-- SendIt -->
-      <article class="proj-card reveal" data-tags="in-progress network">
+      <article class="proj-card reveal" data-tags="in-progress full-stack security">
         <div class="proj-card-left">
           <div class="proj-num">01</div>
           <div class="proj-meta">
             <span class="proj-status wip">In Development</span>
-            <span class="proj-category">Network / Full Stack</span>
+            <span class="proj-category">Full Stack / Security</span>
           </div>
         </div>
         <div class="proj-card-body">
-          <h2 class="proj-title">SendIt — Cross-Platform File Transfer</h2>
-          <p class="proj-desc">Leading this project as President of the Computer Programming Club at UNH. SendIt is a secure, cross-platform file transfer application built on TCP socket programming with a JavaFX GUI. Designed to evolve from academic MVP into a scalable production app with Spring Boot + MySQL backend and optional premium tier.</p>
+          <h2 class="proj-title">SendIt — Cross-Platform P2P File Transfer</h2>
+          <p class="proj-desc">Architected a cross-platform peer-to-peer file transfer system spanning iOS, Android, and desktop, eliminating reliance on third-party cloud storage. Built with a JavaFX desktop client, native SwiftUI and Kotlin mobile clients, and a Spring Boot backend — led from architecture and UML design through implementation, testing, and demo delivery.</p>
 
           <div class="proj-highlights">
             <div class="highlight-item">
               <span class="h-icon">⬡</span>
-              <span>Secure P2P transfer via TCP with modular socket architecture</span>
+              <span>Co-led development of a native iOS client in SwiftUI, owning the sender-side flow and encryption implementation</span>
             </div>
             <div class="highlight-item">
               <span class="h-icon">⬡</span>
-              <span>Session-based access control with time-limited passcodes</span>
+              <span>Built the Android UI in Kotlin, handling core screens and navigation</span>
             </div>
             <div class="highlight-item">
               <span class="h-icon">⬡</span>
-              <span>Modern JavaFX GUI — cross-platform (Windows & macOS)</span>
+              <span>Designed a WebSocket-based relay architecture with end-to-end encryption, preventing persistent server-side file storage</span>
             </div>
             <div class="highlight-item">
               <span class="h-icon">⬡</span>
-              <span>Modular dev branches for team collaboration</span>
+              <span>Implemented JWT-based authentication with role-based access control for encrypted multi-client sessions</span>
+            </div>
+            <div class="highlight-item">
+              <span class="h-icon">⬡</span>
+              <span>Configured GitHub Actions CI/CD pipelines to automate build and test workflows</span>
             </div>
           </div>
 
           <div class="proj-roadmap">
             <span class="roadmap-label">Roadmap</span>
             <div class="roadmap-items">
-              <span class="roadmap-done">✓ Core TCP transfer</span>
-              <span class="roadmap-done">✓ JavaFX GUI</span>
-              <span class="roadmap-done">✓ Passcode access</span>
-              <span class="roadmap-next">→ Spring Boot API</span>
-              <span class="roadmap-next">→ MySQL persistence</span>
-              <span class="roadmap-next">→ Auth (Auth0)</span>
+              <span class="roadmap-done">✓ Core P2P architecture</span>
+              <span class="roadmap-done">✓ JavaFX desktop client</span>
+              <span class="roadmap-done">✓ iOS (SwiftUI) client</span>
+              <span class="roadmap-done">✓ Android (Kotlin) client</span>
+              <span class="roadmap-next">→ Production Spring Boot backend</span>
+              <span class="roadmap-next">→ Public release</span>
             </div>
           </div>
 
           <div class="proj-stack">
-            <span>Java</span><span>JavaFX</span><span>TCP/IP</span>
-            <span>Socket Programming</span><span>Spring Boot (Upcoming)</span><span>MySQL (Planned)</span>
+            <span>JavaFX</span><span>Kotlin</span><span>Swift</span><span>SwiftUI</span>
+            <span>Spring Boot</span><span>WebSockets</span><span>JWT</span>
           </div>
         </div>
         <div class="proj-card-right">
-          <span class="link-soon">Coming to GitHub</span>
+          <a href="https://youtu.be/K813bRjqz4g" target="_blank" class="proj-link-btn">Demo Video →</a>
+        </div>
+      </article>
+
+      <!-- Ethical Hacking Penetration Testing Lab -->
+      <article class="proj-card reveal" data-tags="completed security">
+        <div class="proj-card-left">
+          <div class="proj-num">02</div>
+          <div class="proj-meta">
+            <span class="proj-status done">Completed</span>
+            <span class="proj-category">Security</span>
+          </div>
+        </div>
+        <div class="proj-card-body">
+          <h2 class="proj-title">Ethical Hacking — Penetration Testing Lab</h2>
+          <p class="proj-desc">A comprehensive penetration testing and vulnerability exploitation lab across 3 custom VMs (Ubuntu, Debian, Windows), targeting real-world CVEs to demonstrate remote code execution and privilege escalation paths, with findings documented against industry frameworks.</p>
+
+          <div class="proj-highlights">
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>Exploited 9+ CVEs (CVE-2017-0143, CVE-2019-0708, CVE-2016-5195), achieving RCE and privilege escalation to root/SYSTEM</span></div>
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>Performed reconnaissance with Nmap and Wireshark, identifying 10+ exposed services/ports</span></div>
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>Exploited targets using Metasploit Framework, custom Python PoCs, and kernel exploits compiled with gcc</span></div>
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>Documented findings in a 35+ page report aligned to MITRE ATT&CK and NIST SP 800-53, with 8+ remediation strategies</span></div>
+          </div>
+
+          <div class="proj-stack">
+            <span>Metasploit</span><span>Nmap</span><span>Wireshark</span>
+            <span>Python</span><span>MITRE ATT&CK</span><span>NIST SP 800-53</span>
+          </div>
+        </div>
+        <div class="proj-card-right">
+          <span class="link-soon">Private Report</span>
+        </div>
+      </article>
+
+      <!-- PokéPlatform -->
+      <article class="proj-card reveal" data-tags="completed full-stack">
+        <div class="proj-card-left">
+          <div class="proj-num">03</div>
+          <div class="proj-meta">
+            <span class="proj-status done">Completed</span>
+            <span class="proj-category">Full Stack</span>
+          </div>
+        </div>
+        <div class="proj-card-body">
+          <h2 class="proj-title">PokéPlatform — Full-Stack Web Platform</h2>
+          <p class="proj-desc">A deployed full-stack web application with a REST API supporting full CRUD functionality, backed by MongoDB for persistence.</p>
+
+          <div class="proj-highlights">
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>Full CRUD REST API backed by MongoDB</span></div>
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>Manually tested and validated all endpoints with Postman throughout development</span></div>
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>Deployed end-to-end, from frontend to database</span></div>
+          </div>
+
+          <div class="proj-stack">
+            <span>Vue.js</span><span>Express.js</span><span>MongoDB</span><span>REST API</span><span>Postman</span>
+          </div>
+        </div>
+        <div class="proj-card-right">
+          <span class="link-soon">Private Repo</span>
         </div>
       </article>
 
       <!-- Classify -->
       <article class="proj-card reveal" data-tags="completed full-stack">
         <div class="proj-card-left">
-          <div class="proj-num">02</div>
+          <div class="proj-num">04</div>
           <div class="proj-meta">
             <span class="proj-status done">Completed</span>
             <span class="proj-category">Full Stack</span>
@@ -128,39 +190,10 @@
         </div>
       </article>
 
-      <!-- Car Dealership DB -->
-      <article class="proj-card reveal" data-tags="completed backend">
-        <div class="proj-card-left">
-          <div class="proj-num">03</div>
-          <div class="proj-meta">
-            <span class="proj-status done">Completed</span>
-            <span class="proj-category">Backend / Systems</span>
-          </div>
-        </div>
-        <div class="proj-card-body">
-          <h2 class="proj-title">Car Dealership Database System</h2>
-          <p class="proj-desc">C++ inventory management system built as Technical Lead. Leverages hash tables, OOP design patterns, and a custom menu system to streamline vehicle inventory management and data retrieval. Focused on performance optimization and code quality.</p>
-
-          <div class="proj-highlights">
-            <div class="highlight-item"><span class="h-icon">⬡</span><span>40% increase in inventory processing speed via hash tables</span></div>
-            <div class="highlight-item"><span class="h-icon">⬡</span><span>30% better navigation UX with intuitive menu system</span></div>
-            <div class="highlight-item"><span class="h-icon">⬡</span><span>25% code redundancy reduction through OOP principles</span></div>
-            <div class="highlight-item"><span class="h-icon">⬡</span><span>Efficient hash table implementation for O(1) avg lookups</span></div>
-          </div>
-
-          <div class="proj-stack">
-            <span>C++</span><span>OOP</span><span>Data Structures</span><span>Hash Tables</span>
-          </div>
-        </div>
-        <div class="proj-card-right">
-          <a href="https://github.com/GokuSSGodd/Car-Dealership-Database" target="_blank" class="proj-link-btn">GitHub →</a>
-        </div>
-      </article>
-
       <!-- Portfolio Website -->
       <article class="proj-card reveal" data-tags="completed full-stack">
         <div class="proj-card-left">
-          <div class="proj-num">04</div>
+          <div class="proj-num">05</div>
           <div class="proj-meta">
             <span class="proj-status done">Completed</span>
             <span class="proj-category">Full Stack</span>
@@ -168,17 +201,17 @@
         </div>
         <div class="proj-card-body">
           <h2 class="proj-title">Portfolio Website</h2>
-          <p class="proj-desc">Lead Developer of this responsive personal portfolio. Built from scratch with HTML5, CSS3, and vanilla JavaScript. Features scroll-triggered animations, a dynamic slider, mobile-first responsive design, and 95+ PageSpeed score.</p>
+          <p class="proj-desc">Lead Developer of this personal portfolio — a minimal, technical dark-mode design system built from scratch with HTML5, CSS3, and vanilla JavaScript. Features scroll-reveal animations, an animated terminal on the homepage, and a filterable projects list.</p>
 
           <div class="proj-highlights">
-            <div class="highlight-item"><span class="h-icon">⬡</span><span>Fully responsive across all device sizes</span></div>
-            <div class="highlight-item"><span class="h-icon">⬡</span><span>Custom CSS animations and scroll-driven interactions</span></div>
-            <div class="highlight-item"><span class="h-icon">⬡</span><span>95+ PageSpeed score — optimized performance</span></div>
-            <div class="highlight-item"><span class="h-icon">⬡</span><span>Deployed on Vercel with custom domain</span></div>
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>Custom dark-mode design system with JetBrains Mono + Syne typography</span></div>
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>Scroll-reveal animations and an animated terminal on the homepage</span></div>
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>Filterable projects list with tag-based filtering</span></div>
+            <div class="highlight-item"><span class="h-icon">⬡</span><span>Fully responsive, deployed on Vercel with a custom domain</span></div>
           </div>
 
           <div class="proj-stack">
-            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>AOS</span><span>Vercel</span>
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Vercel</span>
           </div>
         </div>
         <div class="proj-card-right">
@@ -187,86 +220,48 @@
         </div>
       </article>
 
-      <!-- AI Threat Detection -->
-      <article class="proj-card reveal" data-tags="in-progress security">
-        <div class="proj-card-left">
-          <div class="proj-num">05</div>
-          <div class="proj-meta">
-            <span class="proj-status wip">In Progress</span>
-            <span class="proj-category">AI Security</span>
-          </div>
-        </div>
-        <div class="proj-card-body">
-          <h2 class="proj-title">AI-Powered Threat Detection System</h2>
-          <p class="proj-desc">Project Lead developing an advanced ML-powered threat detection system for real-time cyber attack identification. Uses neural networks and deep learning for pattern recognition in network traffic. Currently in planning and architecture phase with Agile sprint framework in place.</p>
+    </div>
 
-          <div class="proj-highlights">
-            <div class="highlight-item"><span class="h-icon">⬡</span><span>Real-time threat detection targeting 95%+ accuracy</span></div>
-            <div class="highlight-item"><span class="h-icon">⬡</span><span>Custom neural network architecture for traffic analysis</span></div>
-            <div class="highlight-item"><span class="h-icon">⬡</span><span>Containerized deployment via Docker</span></div>
-            <div class="highlight-item"><span class="h-icon">⬡</span><span>Automated response system integrated with detection pipeline</span></div>
-          </div>
+    <!-- Coursework / Academic Projects -->
+    <div class="coursework-section">
+      <span class="section-label">Coursework & Academic Projects</span>
+      <div class="projects-list">
 
-          <div class="proj-roadmap">
-            <span class="roadmap-label">Current Phase</span>
-            <div class="roadmap-items">
-              <span class="roadmap-done">✓ Agile framework setup</span>
-              <span class="roadmap-done">✓ ML model research</span>
-              <span class="roadmap-next">→ Model architecture design</span>
-              <span class="roadmap-next">→ Dataset collection</span>
-              <span class="roadmap-next">→ Training pipeline</span>
+        <article class="proj-card reveal">
+          <div class="proj-card-left">
+            <div class="proj-num">C1</div>
+            <div class="proj-meta">
+              <span class="proj-status done">Completed</span>
+              <span class="proj-category">Backend / Systems</span>
             </div>
           </div>
+          <div class="proj-card-body">
+            <h2 class="proj-title">Car Dealership Database System</h2>
+            <p class="proj-desc">C++ inventory management system built as Technical Lead for a coursework assignment. Leverages hash tables, OOP design patterns, and a custom menu system to streamline vehicle inventory management and data retrieval.</p>
 
-          <div class="proj-stack">
-            <span>Python</span><span>TensorFlow</span><span>Scikit-learn</span><span>Docker</span>
-          </div>
-        </div>
-        <div class="proj-card-right">
-          <span class="link-soon">In Development</span>
-        </div>
-      </article>
+            <div class="proj-highlights">
+              <div class="highlight-item"><span class="h-icon">⬡</span><span>40% increase in inventory processing speed via hash tables</span></div>
+              <div class="highlight-item"><span class="h-icon">⬡</span><span>30% better navigation UX with intuitive menu system</span></div>
+              <div class="highlight-item"><span class="h-icon">⬡</span><span>25% code redundancy reduction through OOP principles</span></div>
+              <div class="highlight-item"><span class="h-icon">⬡</span><span>Efficient hash table implementation for O(1) avg lookups</span></div>
+            </div>
 
-      <!-- IBM Certificate -->
-      <article class="proj-card reveal" data-tags="in-progress">
-        <div class="proj-card-left">
-          <div class="proj-num">06</div>
-          <div class="proj-meta">
-            <span class="proj-status wip">In Progress</span>
-            <span class="proj-category">Certification</span>
-          </div>
-        </div>
-        <div class="proj-card-body">
-          <h2 class="proj-title">IBM DevOps & Software Engineering Certificate</h2>
-          <p class="proj-desc">Pursuing a comprehensive 15-course professional certification from IBM. Covers application security, AI development with Python and Flask, CI/CD pipelines, cloud-native architectures, and modern DevOps practices. Hands-on labs alongside theoretical content.</p>
-
-          <div class="proj-roadmap">
-            <span class="roadmap-label">Progress</span>
-            <div class="roadmap-items">
-              <span class="roadmap-done">✓ Intro to DevOps</span>
-              <span class="roadmap-next">→ Cloud Computing (current)</span>
-              <span class="roadmap-next">→ Agile &amp; Scrum</span>
-              <span class="roadmap-next">→ Python for AI/Data Science</span>
-              <span class="roadmap-next">→ Application Security</span>
+            <div class="proj-stack">
+              <span>C++</span><span>OOP</span><span>Data Structures</span><span>Hash Tables</span>
             </div>
           </div>
-
-          <div class="proj-stack">
-            <span>Python</span><span>Flask</span><span>AI Dev</span>
-            <span>App Security</span><span>DevOps</span><span>Cloud Computing</span>
+          <div class="proj-card-right">
+            <a href="https://github.com/GokuSSGodd/Car-Dealership-Database" target="_blank" class="proj-link-btn">GitHub →</a>
           </div>
-        </div>
-        <div class="proj-card-right">
-          <a href="https://www.coursera.org/professional-certificates/devops-and-software-engineering" target="_blank" class="proj-link-btn">Coursera →</a>
-        </div>
-      </article>
+        </article>
 
+      </div>
     </div>
   </main>
 
   <footer class="footer">
     <span class="footer-logo">ma<span class="accent">.</span></span>
-    <span class="footer-copy">© 2025 Murtaza Amjad</span>
+    <span class="footer-copy">© 2026 Murtaza Amjad</span>
     <div class="footer-links">
       <a href="https://github.com/GokuSSGodd" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/murtaza-amjad-93136025a/" target="_blank">LinkedIn</a>
