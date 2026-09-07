@@ -50,12 +50,6 @@ website/
 └── public/              ← images, logo, and both resume PDFs
 ```
 
-`js/about.js` and `js/resume.js` are **not referenced by any page** — leftovers
-from the pre-redesign version of the site (an image slider and an AOS scroll-
-animation init, respectively). Likewise, `code_documentation.md` documents that
-older design and is out of date. Safe to ignore or delete; kept for now in case
-any of that logic needs to be resurrected.
-
 ## Updating content
 
 **New featured project** — add a `<article class="proj-card reveal" data-tags="...">`
