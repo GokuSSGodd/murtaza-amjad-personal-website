@@ -10,7 +10,7 @@ const lines = [
   { delay: 1450, html: '<span class="t-out">}</span>' },
   { delay: 1700, html: '' },
   { delay: 1800, html: '<span class="t-prompt">❯</span> <span class="t-cmd">ls projects/</span>' },
-  { delay: 2200, html: '<span class="t-val">SendIt</span>  <span class="t-val">Classify</span>  <span class="t-val">AI-Threat-Detect</span>  <span class="t-val">Car-DB</span>' },
+  { delay: 2200, html: '<span class="t-val">SendIt</span>  <span class="t-val">PenTest-Lab</span>  <span class="t-val">PokePlatform</span>  <span class="t-val">Classify</span>' },
   { delay: 2600, html: '' },
   { delay: 2700, html: '<span class="t-prompt">❯</span> <span class="t-comment"># always building something new</span> <span class="cursor"></span>' },
 ];
