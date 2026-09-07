@@ -1,57 +1,83 @@
-# Portfolio Redesign — Drop-in Replacement Guide
+# Murtaza Amjad — Portfolio Site
 
-## What Changed
+Personal portfolio for Murtaza Amjad (Software Engineer & Cybersecurity Specialist,
+B.S. Computer Science, University of New Haven). Static HTML/CSS/vanilla JS, no
+build step, deployed on Vercel.
 
-Complete visual overhaul. Same content, completely new design system:
+- **Live:** https://murtaza-amjad-personal-website.vercel.app/
+- **Theme:** Dark background (`#0a0a0b`) with an electric green accent (`#00e5a0`)
+- **Fonts:** JetBrains Mono (body/code feel) + Syne (headings)
+- **Design language:** Minimal, technical, grid-based — no gradients, no glow, no clutter
 
-- **Theme**: Dark background (`#0a0a0b`) with electric green accent (`#00e5a0`)
-- **Fonts**: JetBrains Mono (body/code feel) + Syne (headings)
-- **Design language**: Minimal, technical, grid-based — no gradients, no glow, no clutter
-- **New features**: Animated terminal on homepage, filter bar on projects page, scroll reveal animations
+## Running locally
 
-## File Structure
+No build tools required — just serve the folder statically, e.g.:
 
 ```
-portfolio/
-├── index.html          ← Home page (hero + terminal + experience + skills + projects + contact)
-├── about.html          ← About page (profile + 4-section grid + certificates)
-├── projects.html       ← Projects page (filterable list with roadmaps)
-├── resume.html         ← Resume page (side-by-side PDF embeds)
+python3 -m http.server 8000
+```
+
+then open `http://localhost:8000/index.html`.
+
+## Pages
+
+| Page | Purpose |
+|---|---|
+| `index.html` | Home — hero + animated terminal, "Who I Am" snapshot, experience, tech stack, featured projects, contact |
+| `about.html` | About — profile, academic background, career goals, leadership & activities, certificates |
+| `projects.html` | Projects — filterable featured project list, plus a separate "Coursework & Academic Projects" section for class assignments |
+| `resume.html` | Resume — two tailored PDF embeds (Software Engineer track, Cybersecurity Analyst track) with download buttons |
+
+## File structure
+
+```
+website/
+├── index.html
+├── about.html
+├── projects.html
+├── resume.html
 ├── css/
-│   ├── shared.css      ← Nav, footer, base tokens, buttons (used by all pages)
-│   ├── index.css       ← Home page styles (includes terminal, hero, skills grid)
-│   ├── about.css       ← About page styles
-│   ├── projects.css    ← Projects list + filter bar
-│   └── resume.css      ← Resume embed layout
+│   ├── shared.css      ← nav, footer, base tokens, buttons (used by all pages)
+│   ├── index.css       ← home page styles (hero, terminal, skills grid)
+│   ├── about.css       ← about page styles
+│   ├── projects.css    ← projects list, filter bar, coursework section
+│   └── resume.css      ← resume embed layout
 ├── js/
-│   ├── shared.js       ← Nav toggle + scroll reveal (used by about, projects, resume)
-│   ├── index.js        ← Terminal animation + home page interactions
-│   └── projects.js     ← Filter button logic
-└── public/             ← Keep all your existing assets here (unchanged)
-    ├── Murtaza Profile Pic.jpg
-    ├── Webster YB Certificate - Murtaza Amjad.png
-    ├── CWA Certificate.png
-    ├── Murtaza Logo.svg
-    ├── Murtaza Amjad Software Engineer _ AI Security Engineer.pdf
-    └── Murtaza Amjad Imformation Security Officer _ Security Engineer.pdf
+│   ├── shared.js       ← nav toggle + scroll reveal (about, projects, resume)
+│   ├── index.js        ← terminal animation + home page interactions
+│   └── projects.js     ← filter button logic (scoped to the featured list only,
+│                          so the Coursework section is always shown)
+└── public/              ← images, logo, and both resume PDFs
 ```
 
-## Drop-in Instructions
+`js/about.js` and `js/resume.js` are **not referenced by any page** — leftovers
+from the pre-redesign version of the site (an image slider and an AOS scroll-
+animation init, respectively). Likewise, `code_documentation.md` documents that
+older design and is out of date. Safe to ignore or delete; kept for now in case
+any of that logic needs to be resurrected.
 
-1. Replace your existing HTML files with these 4 new ones
-2. Replace your `css/` folder with the new `css/` folder
-3. Replace your `js/` folder with the new `js/` folder
-4. Keep your `public/` folder exactly as-is — all asset paths are preserved
+## Updating content
 
-## Adding New Content
+**New featured project** — add a `<article class="proj-card reveal" data-tags="...">`
+block inside `#projectsList` in `projects.html`. `data-tags` controls filtering
+(`completed` / `in-progress`); the filter bar itself only has All / Completed /
+In Progress buttons (category labels like "Full Stack / Security" are just text,
+not tied to a filter).
 
-**New project**: Add a new `<article class="proj-card reveal" data-tags="completed full-stack">` block to `projects.html`. Copy any existing card and update the content.
+**New coursework/academic project** — add a card into the `.coursework-section`
+`.projects-list` at the bottom of `projects.html`. These aren't affected by the
+filter buttons since `projects.js` only queries `#projectsList .proj-card`.
 
-**New experience**: Add a new `.exp-item` div to the experience section in `index.html`.
+**New experience entry** — add an `.exp-item` block to the Experience section in
+`index.html`.
 
-**New skill**: Add a `<span class="skill-item">SkillName</span>` inside any `.skill-list` in `index.html`.
+**New skill** — add a `<span class="skill-item">SkillName</span>` inside the
+relevant `.skill-list` in `index.html`.
 
-## Color tokens (css/shared.css)
+**Resume PDFs** — replace the files in `public/` and update the `<embed>`/
+download links in `resume.html` to match the new filenames.
+
+## Color tokens (`css/shared.css`)
 
 | Variable | Value | Use |
 |---|---|---|
