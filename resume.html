@@ -1,65 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="icon" type="image/svg+xml" href="public/Murtaza Logo.svg">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>amjad/resume</title>
-    <link rel="stylesheet" href="css/resume.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+  <link rel="icon" type="image/svg+xml" href="public/Murtaza Logo.svg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>amjad/resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/resume.css">
 </head>
-
 <body>
-    <!-- Navigation Bar -->
-    <div class="container">
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="resume.html">Resume</a>
-            <a href="index.html#contact">Contact</a>
-        </nav>
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">ma<span class="accent">.</span></a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">home</a>
+      <a href="about.html" class="nav-link">about</a>
+      <a href="projects.html" class="nav-link">projects</a>
+      <a href="resume.html" class="nav-link active">resume</a>
+      <a href="index.html#contact" class="nav-link">contact</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="page-content">
+    <div class="page-hero">
+      <span class="page-tag">// resume</span>
+      <h1>Resume</h1>
+      <p>Two tailored resumes — one for software engineering and AI, one for cybersecurity and security engineering roles.</p>
     </div>
 
-    <!-- Resumes Section -->
-    <section class="resume-section" data-aos="fade-up">
-        <h1>My Resumes</h1>
-        <div class="resumes-container">
-            <!-- Software Engineering Resume -->
-            <div class="resume-item">
-                <h1>Software Engineering & AI</h1>
-                <embed 
-                    src="public/Murtaza Amjad Software Engineer _ AI Security Engineer.pdf" 
-                    type="application/pdf">
-                <div class="button-container">
-                    <a href="public/Murtaza Amjad Software Engineer _ AI Security Engineer-1.pdf" class="btn secondary" download>📄 Download SWE Resume</a>
-                </div>
-            </div>
-            
-            <!-- Cybersecurity Resume -->
-            <div class="resume-item">
-                <h1>Cybersecurity & Security Engineering</h1>
-                <embed 
-                    src="public/Murtaza Amjad Imformation Security Officer _ Security Engineer.pdf" 
-                    type="application/pdf">
-                <div class="button-container">
-                    <a href="public/Murtaza Amjad Imformation Security Officer _ Security Engineer.pdf" class="btn secondary" download>📄 Download Cybersecurity Resume</a>
-                </div>
-            </div>
+    <div class="resume-grid">
+      <!-- SWE Resume -->
+      <div class="resume-block reveal">
+        <div class="resume-header">
+          <div>
+            <h2 class="resume-title">Software Engineer</h2>
+            <p class="resume-sub">Full-stack development, applied AI, and DevOps focus</p>
+          </div>
+          <a href="public/Murtaza Amjad Software Engineer.pdf" class="btn-primary" download>Download PDF</a>
         </div>
-        
-        <!-- Remove the old button container -->
-    </section>
+        <div class="resume-embed-wrap">
+          <embed
+            src="public/Murtaza Amjad Software Engineer.pdf"
+            type="application/pdf"
+            class="resume-embed">
+          <div class="embed-fallback">
+            <p>PDF preview not available in this browser.</p>
+            <a href="public/Murtaza Amjad Software Engineer.pdf" class="btn-ghost" download>Download to view</a>
+          </div>
+        </div>
+      </div>
 
-    <!-- Footer -->
-    <footer>
-        <p class="copyright-text">© Copyright 2025 Murtaza Amjad</p>
-    </footer>
+      <!-- Cybersecurity Resume -->
+      <div class="resume-block reveal">
+        <div class="resume-header">
+          <div>
+            <h2 class="resume-title">Cybersecurity Analyst</h2>
+            <p class="resume-sub">GRC, risk management, SOC, and security operations focus</p>
+          </div>
+          <a href="public/Murtaza Amjad Cybersecurity Analyst.pdf" class="btn-primary" download>Download PDF</a>
+        </div>
+        <div class="resume-embed-wrap">
+          <embed
+            src="public/Murtaza Amjad Cybersecurity Analyst.pdf"
+            type="application/pdf"
+            class="resume-embed">
+          <div class="embed-fallback">
+            <p>PDF preview not available in this browser.</p>
+            <a href="public/Murtaza Amjad Cybersecurity Analyst.pdf" class="btn-ghost" download>Download to view</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-    <!-- AOS Animation Library -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/resume.js"></script>
+  <footer class="footer">
+    <span class="footer-logo">ma<span class="accent">.</span></span>
+    <span class="footer-copy">© 2026 Murtaza Amjad</span>
+    <div class="footer-links">
+      <a href="https://github.com/GokuSSGodd" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/murtaza-amjad-93136025a/" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="js/shared.js"></script>
 </body>
-
 </html>

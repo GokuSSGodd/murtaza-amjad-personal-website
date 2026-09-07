@@ -1,96 +1,84 @@
-# Murtaza Amjad - Portfolio Website
+# Murtaza Amjad — Portfolio Site
 
-Welcome to my personal portfolio website! This project showcases my skills, projects, and professional journey as an aspiring Software Engineer and AI Security Specialist. The website is built using **HTML**, **CSS**, and **JavaScript**, with a focus on responsive design and modern UI/UX principles.
+Personal portfolio for Murtaza Amjad (Software Engineer & Cybersecurity Specialist,
+B.S. Computer Science, University of New Haven). Static HTML/CSS/vanilla JS, no
+build step, deployed on Vercel.
 
-## 🌟 Features
+- **Live:** https://murtaza-amjad-personal-website.vercel.app/
+- **Theme:** Dark background (`#0a0a0b`) with an electric green accent (`#00e5a0`)
+- **Fonts:** JetBrains Mono (body/code feel) + Syne (headings)
+- **Design language:** Minimal, technical, grid-based — no gradients, no glow, no clutter
 
-- **Responsive Design**: The website is fully responsive and works seamlessly on all devices (desktop, tablet, and mobile).
-- **Interactive Animations**: Includes smooth animations and transitions for an engaging user experience.
-- **Dynamic Content**: Features a slider for the "About Me" section and a project showcase with detailed descriptions.
-- **Modern UI/UX**: Clean and intuitive design with a focus on user experience.
-- **Contact Section**: Easy-to-use contact form and social media links for connecting with me.
+## Running locally
 
-## 🚀 Live Demo
+No build tools required — just serve the folder statically, e.g.:
 
-Check out the live version of the website here: [Live Demo](https://murtaza-amjad-personal-website.vercel.app/)
+```
+python3 -m http.server 8000
+```
 
-## 🛠️ Technologies Used
+then open `http://localhost:8000/index.html`.
 
-- **Frontend**: HTML5, CSS3, JavaScript
-- **Animations**: AOS (Animate On Scroll) Library
-- **Icons**: Font Awesome
-- **Fonts**: Google Fonts (Orbitron)
+## Pages
 
-## 📂 Project Structure
+| Page | Purpose |
+|---|---|
+| `index.html` | Home — hero + animated terminal, "Who I Am" snapshot, experience, tech stack, featured projects, contact |
+| `about.html` | About — profile, academic background, career goals, leadership & activities, certificates |
+| `projects.html` | Projects — filterable featured project list, plus a separate "Coursework & Academic Projects" section for class assignments |
+| `resume.html` | Resume — two tailored PDF embeds (Software Engineer track, Cybersecurity Analyst track) with download buttons |
 
-portfolio-website/
+## File structure
 
-- about.html # About Me page
-- index.html # Home page
-- projects.html # Projects page
-- resume.html # Resume page
-- README.md # This file
+```
+website/
+├── index.html
+├── about.html
+├── projects.html
+├── resume.html
+├── css/
+│   ├── shared.css      ← nav, footer, base tokens, buttons (used by all pages)
+│   ├── index.css       ← home page styles (hero, terminal, skills grid)
+│   ├── about.css       ← about page styles
+│   ├── projects.css    ← projects list, filter bar, coursework section
+│   └── resume.css      ← resume embed layout
+├── js/
+│   ├── shared.js       ← nav toggle + scroll reveal (about, projects, resume)
+│   ├── index.js        ← terminal animation + home page interactions
+│   └── projects.js     ← filter button logic (scoped to the featured list only,
+│                          so the Coursework section is always shown)
+└── public/              ← images, logo, and both resume PDFs
+```
 
-📂 css/ # CSS files for styling
+## Updating content
 
-- about.css # Styles for the About page
-- index.css # Styles for the Home page
-- project.css # Styles for the Projects page
-- resume.css # Styles for the Resume page
+**New featured project** — add a `<article class="proj-card reveal" data-tags="...">`
+block inside `#projectsList` in `projects.html`. `data-tags` controls filtering
+(`completed` / `in-progress`); the filter bar itself only has All / Completed /
+In Progress buttons (category labels like "Full Stack / Security" are just text,
+not tied to a filter).
 
-📂 js/ # JavaScript files for interactivity
+**New coursework/academic project** — add a card into the `.coursework-section`
+`.projects-list` at the bottom of `projects.html`. These aren't affected by the
+filter buttons since `projects.js` only queries `#projectsList .proj-card`.
 
-- about.js # Slider functionality for About page
-- index.js # Animations for Home page
-- projects.js # Animations for Projects page
-- resume.js # Animations for Resume page
+**New experience entry** — add an `.exp-item` block to the Experience section in
+`index.html`.
 
-📂 public/ # Static assets (images, PDFs, etc.)
+**New skill** — add a `<span class="skill-item">SkillName</span>` inside the
+relevant `.skill-list` in `index.html`.
 
-- Murtaza-Picture.png # Profile picture
-- SWE Murtaza Resume.pdf # Resume PDF
-- banner.jpg # Banner picture
-- social-icons/ # Social media icons
-  Copy
+**Resume PDFs** — replace the files in `public/` and update the `<embed>`/
+download links in `resume.html` to match the new filenames.
 
-## 🛠️ Setup Instructions
+## Color tokens (`css/shared.css`)
 
-### Prerequisites
-
-- A modern web browser (Chrome, Firefox, Safari, etc.)
-- A code editor (e.g., Visual Studio Code)
-
-### Steps to Run Locally
-
-1. **Clone the Repository**:
-
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
-
-    Open the Project:
-
-        Open the index.html file in your browser to view the homepage.
-
-        Alternatively, use a live server extension in your code editor to serve the files locally.
-
-    Explore the Website:
-
-        Navigate through the different pages (Home, About, Projects, Resume) using the navigation bar.
-   ```
-
-🤝 Contributing
-
-Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to contact me.
-
-📧 Contact
-
-If you have any questions or would like to connect, feel free to reach out to me:
-
-    Email: murtazaamjad0519@gmail.com
-
-    LinkedIn: Murtaza Amjad
-
-    GitHub: GokuSSGodd
-
-Thank you for visiting my portfolio repository! 😊
+| Variable | Value | Use |
+|---|---|---|
+| `--accent` | `#00e5a0` | Primary accent color |
+| `--bg` | `#0a0a0b` | Page background |
+| `--bg-2` | `#111113` | Card backgrounds |
+| `--bg-3` | `#18181c` | Hover states, tags |
+| `--text` | `#e8e8e4` | Primary text |
+| `--text-muted` | `#888884` | Secondary text |
+| `--text-faint` | `#444440` | Hints, labels |
