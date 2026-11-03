@@ -4,7 +4,7 @@ const lines = [
   { delay: 600,  html: '<span class="t-out">{</span>' },
   { delay: 750,  html: '  <span class="t-key">"name"</span><span class="t-out">:</span> <span class="t-val">"Murtaza Amjad"</span><span class="t-out">,</span>' },
   { delay: 900,  html: '  <span class="t-key">"role"</span><span class="t-out">:</span> <span class="t-val">"Software Engineer"</span><span class="t-out">,</span>' },
-  { delay: 1050, html: '  <span class="t-key">"focus"</span><span class="t-out">:</span> <span class="t-val">"AI Security"</span><span class="t-out">,</span>' },
+  { delay: 1050, html: '  <span class="t-key">"focus"</span><span class="t-out">:</span> <span class="t-val">"Secure by Design"</span><span class="t-out">,</span>' },
   { delay: 1200, html: '  <span class="t-key">"university"</span><span class="t-out">:</span> <span class="t-val">"Univ. of New Haven"</span><span class="t-out">,</span>' },
   { delay: 1350, html: '  <span class="t-key">"open_to_work"</span><span class="t-out">:</span> <span class="t-val">true</span>' },
   { delay: 1450, html: '<span class="t-out">}</span>' },
